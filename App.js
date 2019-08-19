@@ -25,7 +25,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.MANUAL };
 onButtonPress=()=> {
   codePush.sync({
     updateDialog: true,
@@ -44,7 +44,7 @@ const App = () => {
           <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
-              <Text style={styles.footer}>: Hermes</Text>
+              <Text style={styles.footer}>asgdfjag</Text>
             </View>
           )}
           <View style={styles.body}>
@@ -64,16 +64,11 @@ const App = () => {
                 <ReloadInstructions />
               </Text>
             </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
+          
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Learn More</Text>
               <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
+                Read the stackoverflow
               </Text>
             </View>
             <LearnMoreLinks />
@@ -123,4 +118,5 @@ const styles = StyleSheet.create({
   },
 });
 
+App = codePush(codePushOptions)(App);
 export default App;
