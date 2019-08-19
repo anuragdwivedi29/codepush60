@@ -24,15 +24,17 @@ import {
   Colors,
   DebugInstructions,
   ReloadInstructions,
+  Alert
 } from 'react-native/Libraries/NewAppScreen';
 let codePushOptions = { checkFrequency: codePush.CheckFrequency.MANUAL };
-onButtonPress=()=> {
-  codePush.sync({
-    updateDialog: true,
-    installMode: codePush.InstallMode.IMMEDIATE
-  })};
-class App extends React.Component {
 
+class App extends React.Component {
+  onButtonPress=()=> {
+
+    codePush.sync({
+      updateDialog: true,
+      installMode: codePush.InstallMode.IMMEDIATE
+    })};
   render(){
   return (
     <Fragment>
@@ -66,7 +68,7 @@ class App extends React.Component {
             </View>
           
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text style={styles.sectionTitle}>Learn AppSync</Text>
               <Text style={styles.sectionDescription}>
                 Read some documentation
               </Text>
