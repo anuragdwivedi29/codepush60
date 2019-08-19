@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
   Alert
 } from 'react-native/Libraries/NewAppScreen';
-let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_START };
 
 class App extends React.Component {
   onButtonPress=()=> {
@@ -51,14 +51,14 @@ class App extends React.Component {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Push</Text>
+              <Text style={styles.sectionTitle}>Youtube</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> 
               </Text>
             </View>
 
 <TouchableOpacity onPress={this.onButtonPress}>
-  <Text>Check for updates</Text>
+  <Text>Check for upda</Text>
 </TouchableOpacity>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
@@ -121,5 +121,5 @@ const styles = StyleSheet.create({
   },
 });
 
-App = codePush(codePushOptions)(App);
-export default App;
+
+export default codePush(codePushOptions)(App);

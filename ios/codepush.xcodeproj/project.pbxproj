@@ -19,6 +19,8 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* codepushTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* codepushTests.m */; };
 		635232979DFA92D10F9C04C2 /* libPods-codepushTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BD8C46A607CC4D19903AD9 /* libPods-codepushTests.a */; };
+		75EECE94230B23650003BAA8 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EECE91230B23400003BAA8 /* libCodePush.a */; };
+		75EECE96230B239D0003BAA8 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 75EECE95230B239D0003BAA8 /* libz.tbd */; };
 		9E7B42C283AD65732A5DE8E6 /* libPods-codepush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9E5DF3A1408C83A7E50410 /* libPods-codepush.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "codepush-tvOS";
+		};
+		75EECE90230B23400003BAA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EECE8B230B233F0003BAA8 /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = CodePush;
+		};
+		75EECE92230B23400003BAA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75EECE8B230B233F0003BAA8 /* CodePush.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F886647B1F4ADB500036D01B;
+			remoteInfo = "CodePush-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -58,6 +74,8 @@
 		4E4A94EC1443008AE339DE7A /* Pods-codepushTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codepushTests.debug.xcconfig"; path = "Target Support Files/Pods-codepushTests/Pods-codepushTests.debug.xcconfig"; sourceTree = "<group>"; };
 		59644A173A632EEA7DA25C80 /* libPods-codepush-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-codepush-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BD8C46A607CC4D19903AD9 /* libPods-codepushTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-codepushTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75EECE8B230B233F0003BAA8 /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
+		75EECE95230B239D0003BAA8 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		7F7CD0CDEE558713BF967772 /* Pods-codepushTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codepushTests.release.xcconfig"; path = "Target Support Files/Pods-codepushTests/Pods-codepushTests.release.xcconfig"; sourceTree = "<group>"; };
 		801D80BB46DBC3D9FE5D50BF /* Pods-codepush-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codepush-tvOS.release.xcconfig"; path = "Target Support Files/Pods-codepush-tvOS/Pods-codepush-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		98671CD348CB944669A31973 /* Pods-codepush.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-codepush.release.xcconfig"; path = "Target Support Files/Pods-codepush/Pods-codepush.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75EECE96230B239D0003BAA8 /* libz.tbd in Frameworks */,
+				75EECE94230B23650003BAA8 /* libCodePush.a in Frameworks */,
 				9E7B42C283AD65732A5DE8E6 /* libPods-codepush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +159,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				75EECE95230B239D0003BAA8 /* libz.tbd */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				DC9E5DF3A1408C83A7E50410 /* libPods-codepush.a */,
@@ -161,13 +182,22 @@
 				4E4A94EC1443008AE339DE7A /* Pods-codepushTests.debug.xcconfig */,
 				7F7CD0CDEE558713BF967772 /* Pods-codepushTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		75EECE8C230B233F0003BAA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75EECE91230B23400003BAA8 /* libCodePush.a */,
+				75EECE93230B23400003BAA8 /* libCodePush.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				75EECE8B230B233F0003BAA8 /* CodePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -308,12 +338,19 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 75EECE8C230B233F0003BAA8 /* Products */;
+					ProjectRef = 75EECE8B230B233F0003BAA8 /* CodePush.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* codepush */,
@@ -323,6 +360,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		75EECE91230B23400003BAA8 /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = 75EECE90230B23400003BAA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		75EECE93230B23400003BAA8 /* libCodePush.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCodePush.a;
+			remoteRef = 75EECE92230B23400003BAA8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
