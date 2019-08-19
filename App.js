@@ -68,7 +68,7 @@ class App extends React.Component {
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Learn More</Text>
               <Text style={styles.sectionDescription}>
-                Read the stackoverflow
+                Read some documentation
               </Text>
             </View>
             <LearnMoreLinks />
