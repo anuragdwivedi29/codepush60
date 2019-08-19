@@ -31,9 +31,9 @@ onButtonPress=()=> {
     updateDialog: true,
     installMode: codePush.InstallMode.IMMEDIATE
   })};
-const App = () => {
+class App extends React.Component {
 
-  
+  render(){
   return (
     <Fragment>
       <StatusBar barStyle="dark-content" />
@@ -77,6 +77,7 @@ const App = () => {
       </SafeAreaView>
     </Fragment>
   );
+}
 };
 
 const styles = StyleSheet.create({
