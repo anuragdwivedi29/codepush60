@@ -26,7 +26,7 @@ import {
   ReloadInstructions,
   Alert
 } from 'react-native/Libraries/NewAppScreen';
-let codePushOptions = { checkFrequency: codePush.CheckFrequency.MANUAL };
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
 
 class App extends React.Component {
   onButtonPress=()=> {
@@ -51,7 +51,7 @@ class App extends React.Component {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>SCode Push</Text>
+              <Text style={styles.sectionTitle}>Push</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> 
               </Text>
