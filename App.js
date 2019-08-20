@@ -58,7 +58,7 @@ class App extends React.Component {
             </View>
 
 <TouchableOpacity onPress={this.onButtonPress}>
-  <Text>Check for upda</Text>
+  <Text>Check jgjygycycyifuf</Text>
 </TouchableOpacity>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>See Your Changes</Text>
