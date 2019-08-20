@@ -44,35 +44,19 @@ class App extends React.Component {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>asgdfjag</Text>
-            </View>
-          )}
+          
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Youtube</Text>
+              <Text style={styles.sectionTitle}>Play</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.js</Text> 
               </Text>
             </View>
 
 <TouchableOpacity onPress={this.onButtonPress}>
-  <Text>Check jgjygycycyifuf</Text>
+  <Text>Something to do with us</Text>
 </TouchableOpacity>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
           
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn AppSync</Text>
-              <Text style={styles.sectionDescription}>
-                Read some documentation
-              </Text>
-            </View>
             <LearnMoreLinks />
           </View>
         </ScrollView>
